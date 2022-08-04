@@ -1,0 +1,12 @@
+Package: TensorEmulator
+Type: Package
+Title: Implementation of Higher-Order Singular Value Decomposition Tensor Emulator
+Version: 0.1.0
+Date: 2022-08-03
+Author: Giri Gopalan
+Maintainer: Giri Gopalan <gopalan88@gmail.com>
+Description: Functions to implement the higher-order singular value decomposition tensor emulator of Gopalan and Wikle (2021). 
+License: MIT
+Depends: rTensor, lhs, randomForest, kernlab
+Encoding: UTF-8
+LazyData: true
