@@ -7,7 +7,7 @@ dims <- c(1,1) #specify the dimension of each parameter
 mins <- list(c(1), c(.1)) #specify the minimum values of each parameter in a list
 maxes <- list (c(40),(1)) #specify the maximum values of each parameter in a list
 params_list <- generate_params(n_vals, dims, mins, maxes)
-abm_dim <- c(2,20,201) #specify dimensions of the ABM output (space,agents,time)
+abm_dim <- c(2,20,101) #specify dimensions of the ABM output (space,agents,time)
 #build training tensor using ABM version
 training_tensor <- build_tensor_ABM(n_vals,abm_dim,ABM_simulator, params_list[[1]])
 ranks <- c(5,5)
