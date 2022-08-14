@@ -2,7 +2,7 @@
 
 #Another function to populate a tensor specifically with agent-based model simulations.
 #Assumption is that simulator function returns a multidimensional array and takes a single
-#vector as input. First dimension of returned array is index for spatial coordinate (1, 2, or 3),
+#vector as input. First dimension of returned array is number of spatial coordinates (1, 2, or 3),
 #second dimension is number of agents, third dimension is number of time indices.
 build_tensor_ABM <- function(n_vals,abm_dim,simulator,params)
 {
