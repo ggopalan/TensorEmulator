@@ -57,7 +57,6 @@ tensor_emulator_RF <- function(RFs,Z,r,input)
   K <- length(r)
   for(i in 1:K)
   {
-    print(i)
     cur_val <- input[[i]]
     cur_u <- rep(0,r[[i]])
     for(j in 1:r[[i]])
@@ -77,7 +76,6 @@ tensor_emulator_GP <- function(GPs,Z,r,input)
   K <- length(r)
   for(i in 1:K)
   {
-    print(i)
     cur_val <- input[[i]]
     cur_u <- rep(0,r[[i]])
     for(j in 1:r[[i]])
@@ -97,7 +95,6 @@ tensor_emulator_comb <- function(GPs,RFs,Z,r,comb,input)
   K <- length(r)
   for(i in 1:K)
   {
-    print(i)
     cur_val <- input[[i]]
     cur_u <- rep(0,r[[i]])
     #specify RF or GP via comb
